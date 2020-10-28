@@ -32,14 +32,15 @@ rect(0, 500, windowWidth, windowHeight)
 pop()
 //END OF GRADIENT//
 
-
-fill('lightpink')
+//Suns
+fill(255,182,193)
 circle(800,0, 100)
 circle(800, 800, 100)
 
 fill(255,145,175)
 circle(800,0, 75)
 circle(800, 800, 75)
+//Suns
 
 //Top Wave
 fill(0,105,160, 40)
