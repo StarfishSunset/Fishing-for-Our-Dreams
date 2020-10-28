@@ -43,7 +43,7 @@ circle(800, 800, 75)
 //Suns
 
 //Top Wave
-fill(0,105,160, 40)
+fill(0,105,160, 20)
   stroke(244,194,194)
   beginShape();
 
@@ -60,6 +60,22 @@ fill(0,105,160, 40)
   vertex(0, height);
   endShape(CLOSE);
   
+  beginShape();
+
+  fill(0,105,160, 30)
+  let woff = 0; 
+
+  for (let x = 0; x <= width; x += 10) {
+    let y = map(noise(xoff, yoff), 50, 1, 100, 620);
+    vertex(x, y);
+    xoff += 0.05;
+  }
+
+  yoff += 0.01;
+  vertex(width, height);
+  vertex(0, height);
+  endShape(CLOSE);
+
 //Bottom Wave
   beginShape();
 
@@ -67,7 +83,7 @@ fill(0,105,160, 40)
   let zoff = 0; 
 
   for (let x = 0; x <= width; x += 10) {
-    let y = map(noise(xoff, yoff), 30, 1, 100, 650);
+    let y = map(noise(xoff, yoff), 30, 1, 100, 720);
     vertex(x, y);
     xoff += 0.05;
   }
