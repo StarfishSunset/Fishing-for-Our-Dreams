@@ -33,7 +33,7 @@ pop()
 //END OF GRADIENT//
 
 //Suns
-fill(255,182,193)
+fill(255,182,193, 160)
 circle(800,0, 100)
 circle(800, 800, 100)
 
