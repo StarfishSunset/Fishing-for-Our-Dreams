@@ -50,7 +50,7 @@ fill(0,105,160, 20)
   let xoff = 0; 
 
   for (let x = 0; x <= width; x += 10) {
-    let y = map(noise(xoff, yoff), 25, 4.5, 100, 520);
+    let y = map(noise(xoff, yoff), 25, 5, 200, 520);
     vertex(x, y);
     xoff += 0.05;
   }
@@ -66,7 +66,7 @@ fill(0,105,160, 20)
   let woff = 0; 
 
   for (let x = 0; x <= width; x += 10) {
-    let y = map(noise(xoff, yoff), 30, 2.5, 100, 620);
+    let y = map(noise(xoff, yoff), 30, 2.7, 200, 620);
     vertex(x, y);
     xoff += 0.05;
   }
