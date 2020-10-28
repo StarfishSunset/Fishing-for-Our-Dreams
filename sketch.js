@@ -37,6 +37,10 @@ fill('lightpink')
 circle(800,0, 100)
 circle(800, 800, 100)
 
+fill(255,145,175)
+circle(800,0, 75)
+circle(800, 800, 75)
+
 //Top Wave
 fill(0,105,160, 40)
   stroke(244,194,194)
