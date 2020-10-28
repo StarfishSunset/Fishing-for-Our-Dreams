@@ -2,3 +2,8 @@ body {
   background-color: transparent;
   margin: 0;
 }
+
+svg.totoro {
+  position: absolute;
+  top: 100px;
+}
