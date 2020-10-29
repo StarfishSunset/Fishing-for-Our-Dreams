@@ -52,10 +52,10 @@ fill(0,105,160, 20)
   for (let x = 0; x <= width; x += 10) {
     let y = map(noise(xoff, yoff), 25, 5, 200, 520);
     vertex(x, y);
-    xoff += .2;
+    xoff += .15;
   }
 
-  yoff += 0.01;
+  yoff += 0.007;
   vertex(width, height);
   vertex(0, height);
   endShape(CLOSE);
@@ -68,10 +68,10 @@ fill(0,105,160, 20)
   for (let x = 0; x <= width; x += 10) {
     let y = map(noise(xoff, yoff), 30, 2.7, 200, 620);
     vertex(x, y);
-    xoff += 0.2;
+    xoff += 0.15;
   }
 
-  yoff += 0.01;
+  yoff += 0.007;
   vertex(width, height);
   vertex(0, height);
   endShape(CLOSE);
@@ -85,10 +85,10 @@ fill(0,105,160, 20)
   for (let x = 0; x <= width; x += 10) {
     let y = map(noise(xoff, yoff), 35, 1, 100, 720);
     vertex(x, y);
-    xoff += 0.2;
+    xoff += 0.15;
   }
 
-  yoff += 0.01;
+  yoff += 0.007;
   vertex(width, height);
   vertex(0, height);
   endShape(CLOSE);
