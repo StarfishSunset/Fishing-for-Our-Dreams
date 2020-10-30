@@ -43,8 +43,8 @@ circle(800, 800, 75)
 //Suns
 
 push()
-
-translate(420, 170)
+scale(1.25)
+translate(320, 135)
 beginShape()
 noStroke()
 ellipse(50,50,60,50);
