@@ -55,7 +55,7 @@ fill(0,105,160, 20)
     xoff += .15;
   }
 
-  yoff += 0.007;
+  yoff += 0.005;
   vertex(width, height);
   vertex(0, height);
   endShape(CLOSE);
@@ -71,7 +71,7 @@ fill(0,105,160, 20)
     xoff += 0.15;
   }
 
-  yoff += 0.007;
+  yoff += 0.005;
   vertex(width, height);
   vertex(0, height);
   endShape(CLOSE);
@@ -88,7 +88,7 @@ fill(0,105,160, 20)
     xoff += 0.15;
   }
 
-  yoff += 0.007;
+  yoff += 0.005;
   vertex(width, height);
   vertex(0, height);
   endShape(CLOSE);
