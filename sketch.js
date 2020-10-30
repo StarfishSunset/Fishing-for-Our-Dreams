@@ -42,6 +42,19 @@ circle(800,0, 75)
 circle(800, 800, 75)
 //Suns
 
+push()
+
+translate(420, 170)
+beginShape()
+noStroke()
+ellipse(50,50,60,50);
+  ellipse(80,40,60,50);
+  ellipse(130,50,60,50);
+  ellipse(70,70,60,50);
+  ellipse(110,65,60,50);
+endShape()
+
+pop()
 //Top Wave
 fill(0,105,160, 20)
   stroke(244,194,194)
