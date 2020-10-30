@@ -42,6 +42,7 @@ circle(800,0, 75)
 circle(800, 800, 75)
 //Suns
 
+//Cloud start
 push()
 
 translate(420, 170)
@@ -55,6 +56,8 @@ ellipse(50,50,60,50);
 endShape()
 
 pop()
+//Cloud end
+
 //Top Wave
 fill(0,105,160, 20)
   stroke(244,194,194)
