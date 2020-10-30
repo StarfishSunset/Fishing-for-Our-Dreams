@@ -48,6 +48,7 @@ scale(1.25)
 translate(320, 135)
 beginShape()
 noStroke()
+fill(239,187,204)
 ellipse(50,50,60,50);
   ellipse(80,40,60,50);
   ellipse(130,50,60,50);
@@ -62,6 +63,7 @@ scale(1.25)
 translate(320, 600)
 beginShape()
 noStroke()
+fill(239,187,204)
 ellipse(50,50,60,50);
   ellipse(80,40,60,50);
   ellipse(130,50,60,50);
