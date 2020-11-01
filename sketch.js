@@ -1,3 +1,4 @@
+
 let yoff = 0.0;
 function setup() {
   createCanvas(800, 800);
@@ -18,6 +19,9 @@ ctx.fillStyle = gradient;
 noStroke()
 rect(0, 0, 800, 500);
 pop()
+
+//Stars
+
 
 push()
 let ctz = canvas.getContext("2d");
