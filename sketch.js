@@ -28,7 +28,7 @@ gradient2.addColorStop(1, 'palevioletred');
 ctz.fillStyle = gradient2;
 
 noStroke()
-rect(0, 500, windowWidth, windowHeight)
+rect(0, 500, width, height)
 pop()
 //END OF GRADIENT//
 
