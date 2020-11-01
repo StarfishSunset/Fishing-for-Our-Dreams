@@ -44,35 +44,19 @@ circle(800, 800, 75)
 
 //Cloud start
 push()
-scale(1.25)
-translate(320, 135)
+
+translate(420, 170)
 beginShape()
 noStroke()
-fill(239,187,204)
 ellipse(50,50,60,50);
   ellipse(80,40,60,50);
   ellipse(130,50,60,50);
   ellipse(70,70,60,50);
   ellipse(110,65,60,50);
 endShape()
+
 pop()
 //Cloud end
-
-//Cloud Reflection
-push()
-scale(1.25)
-translate(320, 600)
-beginShape()
-noStroke()
-fill(239,187,204)
-ellipse(50,50,60,50);
-  ellipse(80,40,60,50);
-  ellipse(130,50,60,50);
-  ellipse(70,60,60,50);
-  ellipse(110,65,60,50);
-endShape()
-pop()
-//Cloud Reflection end
 
 //Top Wave
 fill(0,105,160, 20)
