@@ -32,22 +32,6 @@ rect(0, 500, width, height)
 pop()
 //END OF GRADIENT//
 
-//fishing line
-push();
-noFill();
-stroke(0);
-beginShape();
-curveVertex(200,200);
-curveVertex(410,120);
-curveVertex(80,60);
-curveVertex(100,100);
-curveVertex(60,120);
-curveVertex(50,150);
-curveVertex(50,150);
-endShape();
-pop()
-// END fishing line
-
 //Suns
 fill(255,182,193, 160)
 circle(800,0, 100)
@@ -73,6 +57,22 @@ ellipse(50,50,60,50);
 endShape()
 pop()
 //Cloud end
+
+ //fishing line
+ push();
+ noFill();
+ stroke(0);
+ beginShape();
+ curveVertex(500,200);
+ curveVertex(410,120);
+ curveVertex(410,200);
+ curveVertex(410,250);
+ curveVertex(410,270);
+ curveVertex(410,600);
+ curveVertex(410,300);
+ endShape();
+ pop()
+ // END fishing line
 
 //Cloud Reflection
 push()
@@ -140,5 +140,6 @@ fill(0,105,160, 20)
   vertex(width, height);
   vertex(0, height);
   endShape(CLOSE);
+//END wave
 
 }
