@@ -62,6 +62,22 @@ endShape()
 pop()
 //Cloud end
 
+ //fishing line
+ push();
+ noFill();
+ stroke(0);
+ beginShape();
+ curveVertex(500,200);
+ curveVertex(410,120);
+ curveVertex(410,200);
+ curveVertex(410,250);
+ curveVertex(410,270);
+ curveVertex(410,600);
+ curveVertex(410,300);
+ endShape();
+ pop()
+ // END fishing line
+
 //Cloud Reflection
 push()
 scale(1.25)
@@ -130,5 +146,6 @@ fill(0,105,160, 20)
   vertex(width, height);
   vertex(0, height);
   endShape(CLOSE);
+//END wave
 
 }
