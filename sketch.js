@@ -32,6 +32,22 @@ rect(0, 500, width, height)
 pop()
 //END OF GRADIENT//
 
+//fishing line
+push();
+noFill();
+stroke(0);
+beginShape();
+curveVertex(200,200);
+curveVertex(410,120);
+curveVertex(80,60);
+curveVertex(100,100);
+curveVertex(60,120);
+curveVertex(50,150);
+curveVertex(50,150);
+endShape();
+pop()
+// END fishing line
+
 //Suns
 fill(255,182,193, 160)
 circle(800,0, 100)
