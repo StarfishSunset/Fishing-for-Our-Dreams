@@ -107,7 +107,8 @@ fill(0,105,160, 20)
   vertex(width, height);
   vertex(0, height);
   endShape(CLOSE);
-  
+
+  //Middle Wave
   beginShape();
 
   fill(0,105,160, 30)
@@ -123,6 +124,7 @@ fill(0,105,160, 20)
   vertex(width, height);
   vertex(0, height);
   endShape(CLOSE);
+//Middle Wave
 
 //Bottom Wave
   beginShape();
