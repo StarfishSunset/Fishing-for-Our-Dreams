@@ -1,8 +1,23 @@
-# p5.js template
+# Fishing for Your Dreams
 
-This code is a “starter kit” for using [p5.js](https://p5js.org) with a sketch
-written as a [JavaScript
-module](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules).
+### Description
+Equally serene and minimal, our project hopes to invoke an impactful calmness byways through the simple yet quirky interaction within it. 
+
+**insert Picture here**
+
+### Directions
+
+1. Play with the slider
+2. Click the mouse to cast
+3. Click a key to real
+3. Enjoy
+
+## Authors
+Ethan Lan and Vicky Oury
+
+## Acknowledgements
+
+
 
 ## License
 
