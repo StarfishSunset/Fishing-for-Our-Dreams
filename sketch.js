@@ -20,9 +20,6 @@ noStroke()
 rect(0, 0, 800, 500);
 pop()
 
-//Stars
-
-
 push()
 let ctz = canvas.getContext("2d");
 let gradient2 = ctz.createLinearGradient(300, 500, 1000, 1000);
