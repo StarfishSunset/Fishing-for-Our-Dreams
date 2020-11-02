@@ -5,6 +5,8 @@ Equally serene and minimal, our project hopes to invoke an impactful calmness by
 
 **insert Picture here**
 
+![](assets/screenshot.png)
+
 ### Directions
 
 1. Play with the slider
