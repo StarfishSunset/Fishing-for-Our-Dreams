@@ -3,6 +3,12 @@ let x = 1;
 let easing = .015;
 let yoff = 0.0;
 let myWaves;
+let img;
+
+function preload() {
+img = loadImage('bitmap.png');
+}
+
 function setup() {
   createCanvas(800, 800);
 }
@@ -152,19 +158,25 @@ fill(0,105,160, 20)
   endShape(CLOSE);
 //END wave
 
-// stars();
+boat();
+
+//stars();
 }
 
 
+function boat(){
+ m = map(mouseY, 0, 800,  0, 800);
+  image(img, m, 600, 50, 30)
+}
 // function stars(){
-//   for(let n=3; n<= 150; n+=1){
+//   // for(let n=3; n<= 150; n+=1){
   
-//    let o= random(100, 200)
-//    noStroke();
-//    fill(255, o);
-//    let r= random(4, 10);
-  
+//   //  let o= random(100, 200)
+//   //  noStroke();
+//   //  fill(255, o);
+//   //  let r= random(4, 10);
+//   fill(0);
 //    let x= random(0,width);
-//    let y= random(0, height);
+//    let y= random(0, 200);
 //    ellipse(x, y, r);
-//   }
+  
