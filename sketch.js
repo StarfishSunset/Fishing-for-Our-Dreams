@@ -7,7 +7,7 @@ let img;
 
 function preload() {
 img = loadImage('bitmap.png');
-others = loadSound('Others.mp3')
+others = loadSound('Others.mp3');
 }
 
 function setup() {
@@ -15,6 +15,11 @@ function setup() {
 }
 
 function draw() {
+
+  function mousePressed() {
+    others.play();
+  }
+  
   background(100);
 let targetX = mouseX;
 let dx = targetX - x;
@@ -153,6 +158,11 @@ stars();
 function boat(){
  m = map(mouseY, 0, 800,  0, 600);
   image(img, m, 600, 50, 30)
+  
+  // if (x > width) {
+  //   swim = -3;
+  // }
+  // x = x + swim;
 }
 
 function fishing() {
@@ -164,10 +174,10 @@ o = map(mouseY, 0, 200, 0, 800);
   beginShape();
   curveVertex(m,o);
   curveVertex(410,120);
+  curveVertex(m, 120);
   curveVertex(m, o);
   curveVertex(m, o);
   curveVertex(m, o);
-  curveVertex(m, 0);
   curveVertex(m, o);
   endShape();
   pop()
