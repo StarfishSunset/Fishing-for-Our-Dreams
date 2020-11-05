@@ -9,7 +9,7 @@ Equally serene and minimal, our project hopes to invoke an impactful calmness by
 
 ### Directions
 
-1. Play with the slider
+1. Play with the moving skies
 2. Click the mouse to cast
 3. Click a key to real
 3. Enjoy
