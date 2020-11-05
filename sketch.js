@@ -7,6 +7,7 @@ let img;
 
 function preload() {
 img = loadImage('bitmap.png');
+myWaves = loadSound('waves.mp3')
 }
 
 function setup() {
