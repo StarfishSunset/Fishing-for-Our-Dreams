@@ -1,5 +1,6 @@
 
 let yoff = 0.0;
+let myWaves;
 function setup() {
   createCanvas(800, 800);
 }
