@@ -72,21 +72,9 @@ endShape()
 pop()
 //Cloud end
 
- //fishing line
- push();
- noFill();
- stroke(0);
- beginShape();
- curveVertex(500,200);
- curveVertex(410,120);
- curveVertex(410,200);
- curveVertex(410,250);
- curveVertex(410,270);
- curveVertex(410,600);
- curveVertex(410,300);
- endShape();
- pop()
- // END fishing line
+ 
+fishing();
+
 
 //Cloud Reflection
 push()
@@ -167,6 +155,22 @@ boat();
 function boat(){
  m = map(mouseY, 0, 800,  0, 600);
   image(img, m, 600, 50, 30)
+}
+
+function fishing() {
+  push();
+  noFill();
+  stroke(0);
+  beginShape();
+  curveVertex(500,200);
+  curveVertex(410,120);
+  curveVertex(410,200);
+  curveVertex(410,250);
+  curveVertex(410,270);
+  curveVertex(410,600);
+  curveVertex(410,300);
+  endShape();
+  pop()
 }
 // function stars(){
 //   // for(let n=3; n<= 150; n+=1){
