@@ -5,7 +5,7 @@ Equally serene and minimal, our project hopes to invoke an impactful calmness by
 
 **insert Picture here**
 
-![](screenshot.png)
+![](screen.png)
 
 ### Directions
 
