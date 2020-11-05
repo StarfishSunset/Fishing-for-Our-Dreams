@@ -156,13 +156,8 @@ stars();
 
 
 function boat(){
-  let x;
- m = map(500, 0, 800,  0, 600);
+  m = map(mouseY, 0, 800,  0, 600);
   image(img, m, 600, 50, 30)
-  if(keyIsDown(RIGHT_ARROW)){
-    x += 5
-  }
-  
   // if (x > width) {
   //   swim = -3;
   // }
