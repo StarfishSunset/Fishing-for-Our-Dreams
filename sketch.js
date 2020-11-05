@@ -158,11 +158,11 @@ stars();
 
 function boat(){
 if (keyIsDown(LEFT_ARROW)) {
-  x -= 1.2;
+  x -= .8;
 }
 
 if (keyIsDown(RIGHT_ARROW)) {
-  x += 1.2;
+  x += .8;
 }
   m = map(x, 0, 800,  0, 800);
   image(img, m, 600, 50, 30);
