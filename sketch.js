@@ -57,6 +57,10 @@ circle(x,0, 75)
 circle(x, 800, 75)
 //Suns
 
+push()
+stars();
+pop()
+
 //Cloud start
 push()
 scale(1.25)
@@ -72,10 +76,8 @@ ellipse(50,50,60,50);
 endShape()
 pop()
 //Cloud end
-
  
 fishing();
-
 
 //Cloud Reflection
 push()
@@ -149,7 +151,6 @@ fill(0,105,160, 20)
 
 boat();
 
-//stars();
 }
 
 
@@ -175,15 +176,17 @@ o = map(mouseY, 0, 200, 0, 800);
   endShape();
   pop()
 }
-// function stars(){
-//   // for(let n=3; n<= 150; n+=1){
+
+function stars(){
+  for(let n=3; n<= 150; n+=1){
   
-//   //  let o= random(100, 200)
-//   //  noStroke();
-//   //  fill(255, o);
-//   //  let r= random(4, 10);
-//   fill(0);
-//    let x= random(0,width);
-//    let y= random(0, 200);
-//    ellipse(x, y, r);
-  
+   let o= random(100, 200)
+   noStroke();
+   fill(255, o);
+   let r= random(4, 10);
+  fill(0);
+   let x= random(0,width);
+   let y= random(0, 200);
+   ellipse(x, y, r);
+}
+}
