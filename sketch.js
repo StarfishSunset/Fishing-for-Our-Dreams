@@ -165,7 +165,7 @@ boat();
 
 
 function boat(){
- m = map(mouseY, 0, 800,  0, 800);
+ m = map(mouseY, 0, 800,  0, 600);
   image(img, m, 600, 50, 30)
 }
 // function stars(){
