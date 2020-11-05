@@ -1,16 +1,23 @@
 
+let x = 1;
+let easing = .015;
 let yoff = 0.0;
+let myWaves;
 function setup() {
   createCanvas(800, 800);
 }
 
 function draw() {
   background(100);
+let targetX = mouseX;
+let dx = targetX - x;
+x += dx * easing;
+
 
 //GRADIENT//
 push()
 let ctx = canvas.getContext("2d");
-let gradient = ctx.createLinearGradient(300, 500, 800, 0);
+let gradient = ctx.createLinearGradient(300, 500, x, 0);
 
 gradient.addColorStop(0, 'lightsteelblue');
 gradient.addColorStop(1, 'palevioletred');
@@ -22,7 +29,7 @@ pop()
 
 push()
 let ctz = canvas.getContext("2d");
-let gradient2 = ctz.createLinearGradient(300, 500, 1000, 1000);
+let gradient2 = ctz.createLinearGradient(300, 500, x, 1000);
 
 gradient2.addColorStop(0, 'lightsteelblue');
 gradient2.addColorStop(1, 'palevioletred');
@@ -35,12 +42,12 @@ pop()
 
 //Suns
 fill(255,182,193, 160)
-circle(800,0, 100)
-circle(800, 800, 100)
+circle(x,0, 100)
+circle(x, 800, 100)
 
 fill(255,145,175)
-circle(800,0, 75)
-circle(800, 800, 75)
+circle(x,0, 75)
+circle(x, 800, 75)
 //Suns
 
 //Cloud start
