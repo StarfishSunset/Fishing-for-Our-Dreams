@@ -165,15 +165,17 @@ function boat(){
 }
 
 function fishing() {
-m = map(mouseX, 0, 410, 200, 800);
-o = map(mouseY, 0, 200, 0, 800);
+o = map(mouseY, 0, 200, 0, 500);
+m = map(mouseX, 0, 410, 0, 800);
+
   push();
   noFill();
   stroke(0);
   beginShape();
-  curveVertex(m,o);
+  curveVertex(m, 120);
   curveVertex(410,120);
   curveVertex(m, 120);
+  curveVertex(m, o);
   curveVertex(m, o);
   curveVertex(m, o);
   curveVertex(m, o);
@@ -183,7 +185,7 @@ o = map(mouseY, 0, 200, 0, 800);
 }
 
 function stars(){
-  for(let n=3; n<= 10; n+=1){
+  for(let n=3; n<= 5; n+=1){
   
    let o= random(100, 200)
    noStroke();
