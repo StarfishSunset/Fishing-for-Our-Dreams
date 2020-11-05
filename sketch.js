@@ -159,17 +159,19 @@ function boat(){
 }
 
 function fishing() {
+m = map(mouseX, 0, 410, 200, 800);
+o = map(mouseY, 0, 200, 0, 800);
   push();
   noFill();
   stroke(0);
   beginShape();
-  curveVertex(500,200);
+  curveVertex(m,o);
   curveVertex(410,120);
-  curveVertex(410,200);
-  curveVertex(410,250);
-  curveVertex(410,270);
-  curveVertex(410,600);
-  curveVertex(410,300);
+  curveVertex(m, o);
+  curveVertex(m, o);
+  curveVertex(m, o);
+  curveVertex(m, 0);
+  curveVertex(m, o);
   endShape();
   pop()
 }
