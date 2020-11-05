@@ -8,6 +8,7 @@ let img;
 
 function preload() {
 img = loadImage('bitmap.png');
+others = loadSound('Others.mp3')
 }
 
 function setup() {
@@ -157,11 +158,11 @@ stars();
 
 function boat(){
 if (keyIsDown(LEFT_ARROW)) {
-  x -= 2;
+  x -= 1.2;
 }
 
 if (keyIsDown(RIGHT_ARROW)) {
-  x += 2;
+  x += 1.2;
 }
   m = map(x, 0, 800,  0, 800);
   image(img, m, 600, 50, 30);
