@@ -145,4 +145,19 @@ fill(0,105,160, 20)
   endShape(CLOSE);
 //END wave
 
+// stars();
 }
+
+
+// function stars(){
+//   for(let n=3; n<= 150; n+=1){
+  
+//    let o= random(100, 200)
+//    noStroke();
+//    fill(255, o);
+//    let r= random(4, 10);
+  
+//    let x= random(0,width);
+//    let y= random(0, height);
+//    ellipse(x, y, r);
+//   }
