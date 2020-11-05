@@ -1,6 +1,6 @@
 
 let x = 1;
-let easing = .025;
+let easing = .015;
 let yoff = 0.0;
 let myWaves;
 function setup() {
