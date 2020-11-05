@@ -7,8 +7,8 @@ let others;
 let img;
 
 function preload() {
-img = loadImage('bitmap.png');
 others = loadSound('Others.mp3')
+img = loadImage('bitmap.png');
 }
 
 function setup() {
