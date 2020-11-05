@@ -2,12 +2,12 @@
 let x = 1;
 let easing = .015;
 let yoff = 0.0;
-let myWaves;
+let others;
 let img;
 
 function preload() {
 img = loadImage('bitmap.png');
-myWaves = loadSound('waves.mp3')
+others = loadSound('Others.mp3')
 }
 
 function setup() {
