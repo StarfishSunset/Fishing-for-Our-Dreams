@@ -16,10 +16,6 @@ function setup() {
 
 function draw() {
 
-  function mousePressed() {
-    others.play();
-  }
-  
   background(100);
 let targetX = mouseX;
 let dx = targetX - x;
