@@ -156,7 +156,6 @@ fill(0,105,160, 20)
 //END wave
 
 boat();
-stars();
 }
 
 
@@ -184,6 +183,7 @@ if (keyIsDown(RIGHT_ARROW)) {
 function fishing() {
 o = map(mouseY, 0, 200, 0, 500);
 m = map(mouseX, 0, 410, 0, 800);
+g = map(mouseX, 0, 410, 0, 800)
 
   push();
   noFill();
@@ -191,22 +191,8 @@ m = map(mouseX, 0, 410, 0, 800);
   beginShape();
   curveVertex(410, o);
   curveVertex(410, 120);
-  curveVertex(410, o);
-  curveVertex(m, 120);
+  curveVertex(410, 800);
+  curveVertex(g, o);
   endShape();
   pop()
-}
-
-function stars(){
-  for(let n=3; n<= 5; n+=1){
-  
-   let o= random(100, 200)
-   noStroke();
-   fill(255, o);
-   let r= random(4, 5);
-  fill(255, 70);
-   let x= random(0,width);
-   let y= random(0, 200);
-   ellipse(x, y, r);
-}
 }
