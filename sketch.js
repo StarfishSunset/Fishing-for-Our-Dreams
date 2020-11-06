@@ -1,6 +1,7 @@
 
 let z = 1;
 let x = 100;
+let v = 100;
 let easing = .015;
 let yoff = 0.0;
 let others;
@@ -167,13 +168,17 @@ if (keyIsDown(LEFT_ARROW)) {
 if (keyIsDown(RIGHT_ARROW)) {
   x += .8;
 }
+if (keyIsDown(LEFT_ARROW)) {
+  v -= .5;
+}
+
+if (keyIsDown(RIGHT_ARROW)) {
+  v += .5;
+}
   m = map(x, 0, 800,  0, 800);
+  n = map(v+ 50, 0, 800, 0, 800);
   image(img, m, 600, 50, 30);
-  // if (x > width) {
-  //   swim = -3;
-  // }
- 
-// x = x + swim;
+  image(img, n, 660, 50, 30);
 }
 
 function fishing() {
