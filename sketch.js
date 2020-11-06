@@ -177,13 +177,9 @@ m = map(mouseX, 0, 410, 0, 800);
   noFill();
   stroke(0);
   beginShape();
+  curveVertex(410, o);
   curveVertex(410, 120);
-  curveVertex(410, 120);
-  curveVertex(410, 210);
-  curveVertex(m, o);
-  curveVertex(m, o);
-  curveVertex(m, o);
-  curveVertex(m, o);
+  curveVertex(410, o);
   curveVertex(m, o);
   endShape();
   pop()
