@@ -192,7 +192,7 @@ m = map(mouseX, 0, 410, 0, 800);
   curveVertex(410, o);
   curveVertex(410, 120);
   curveVertex(410, o);
-  curveVertex(m, o);
+  curveVertex(m, 120);
   endShape();
   pop()
 }
