@@ -4,10 +4,12 @@ let x = 100;
 let easing = .015;
 let yoff = 0.0;
 let others;
+let myWaves;
 let img;
 
 function preload() {
 others = loadSound('Others.mp3')
+myWaves = loadSound('waves.mp3')
 img = loadImage('bitmap.png');
 }
 
@@ -19,6 +21,7 @@ function draw() {
 
   function mousePressed() {
     others.play();
+    myWaves.play()
   }
   
   background(100);
@@ -30,7 +33,7 @@ z += dx * easing;
 //GRADIENT//
 push()
 let ctx = canvas.getContext("2d");
-let gradient = ctx.createLinearGradient(300, 500, z, 0);
+let gradient = ctx.createLinearGradient(300, 500, z, 30);
 
 gradient.addColorStop(0, 'lightsteelblue');
 gradient.addColorStop(1, 'palevioletred');
@@ -42,7 +45,7 @@ pop()
 
 push()
 let ctz = canvas.getContext("2d");
-let gradient2 = ctz.createLinearGradient(300, 500, z, 1000);
+let gradient2 = ctz.createLinearGradient(300, 500, z, 925);
 
 gradient2.addColorStop(0, 'lightsteelblue');
 gradient2.addColorStop(1, 'palevioletred');
