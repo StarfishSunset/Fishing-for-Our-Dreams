@@ -158,19 +158,16 @@ fill(0,105,160, 20)
 boat();
 }
 
-
 function boat(){
 if (keyIsDown(LEFT_ARROW)) {
   x -= .8;
 }
-
 if (keyIsDown(RIGHT_ARROW)) {
   x += .8;
 }
 if (keyIsDown(LEFT_ARROW)) {
   v -= .5;
 }
-
 if (keyIsDown(RIGHT_ARROW)) {
   v += .5;
 }
