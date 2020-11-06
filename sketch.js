@@ -172,7 +172,7 @@ if (keyIsDown(RIGHT_ARROW)) {
   v += .5;
 }
   m = map(x, 0, 800,  0, 800);
-  n = map(v+ 50, 0, 800, 0, 800);
+  n = map(v+ 150, 0, 800, 0, 800);
   image(img, m, 600, 50, 30);
   image(img, n, 660, 50, 30);
 }
