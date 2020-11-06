@@ -9,10 +9,11 @@ Equally serene and minimal, our project hopes to invoke an impactful calmness by
 
 ### Directions
 
-1. Play with the moving skies
-2. Click the mouse to cast
-3. Click a key to real
-3. Enjoy
+1. Use the mouse to change the sky
+2. Use the left and right arrows to move the boat
+3. Try moving them simultanesouly at the same       speed, following each other. 
+4. Enjoy c:
+
 
 ## Authors
 Ethan Lan and Vicky Oury

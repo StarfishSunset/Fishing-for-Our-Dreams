@@ -1,13 +1,14 @@
 
-let x = 1;
+let z = 1;
+let x = 100;
 let easing = .015;
 let yoff = 0.0;
 let others;
 let img;
 
 function preload() {
+others = loadSound('Others.mp3')
 img = loadImage('bitmap.png');
-others = loadSound('Others.mp3');
 }
 
 function setup() {
@@ -18,14 +19,14 @@ function draw() {
 
   background(100);
 let targetX = mouseX;
-let dx = targetX - x;
-x += dx * easing;
+let dx = targetX - z;
+z += dx * easing;
 
 
 //GRADIENT//
 push()
 let ctx = canvas.getContext("2d");
-let gradient = ctx.createLinearGradient(300, 500, x, 0);
+let gradient = ctx.createLinearGradient(300, 500, z, 0);
 
 gradient.addColorStop(0, 'lightsteelblue');
 gradient.addColorStop(1, 'palevioletred');
@@ -37,7 +38,7 @@ pop()
 
 push()
 let ctz = canvas.getContext("2d");
-let gradient2 = ctz.createLinearGradient(300, 500, x, 1000);
+let gradient2 = ctz.createLinearGradient(300, 500, z, 1000);
 
 gradient2.addColorStop(0, 'lightsteelblue');
 gradient2.addColorStop(1, 'palevioletred');
@@ -50,12 +51,12 @@ pop()
 
 //Suns
 fill(255,182,193, 160)
-circle(x,0, 100)
-circle(x, 800, 100)
+circle(z,0, 100)
+circle(z, 800, 100)
 
 fill(255,145,175)
-circle(x,0, 75)
-circle(x, 800, 75)
+circle(z,0, 75)
+circle(z, 800, 75)
 //Suns
 
 //Cloud start
@@ -152,12 +153,20 @@ stars();
 
 
 function boat(){
-  m = map(mouseY, 0, 800,  0, 600);
-  image(img, m, 600, 50, 30)
+if (keyIsDown(LEFT_ARROW)) {
+  x -= .8;
+}
+
+if (keyIsDown(RIGHT_ARROW)) {
+  x += .8;
+}
+  m = map(x, 0, 800,  0, 800);
+  image(img, m, 600, 50, 30);
   // if (x > width) {
   //   swim = -3;
   // }
-  // x = x + swim;
+ 
+// x = x + swim;
 }
 
 function fishing() {
