@@ -86,7 +86,8 @@ pop()
 //text
 fill(239,187,204)
 textSize(15)
-text('Move the boat left and right with the arrow keys', 340, 310);
+textFont('MS Gothic')
+text('Move the boats left and right with the arrow keys', 340, 310);
 //END text
  
 fishing();
