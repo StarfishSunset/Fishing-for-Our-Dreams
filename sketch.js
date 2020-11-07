@@ -82,6 +82,12 @@ ellipse(50,50,60,50);
 endShape()
 pop()
 //Cloud end
+
+//text
+fill(239,187,204)
+textSize(15)
+text('Move the boat left and right with the arrow keys', 340, 310);
+//END text
  
 fishing();
 
