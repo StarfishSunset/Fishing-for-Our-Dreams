@@ -19,7 +19,7 @@ Equally serene and minimal, our project hopes to invoke an impactful calmness by
 Ethan Lan and Vicky Oury
 
 ## Acknowledgements
-
+SVG Animation resource: https://www.youtube.com/watch?v=k4Fd3gR7Z5A
 
 
 ## License
