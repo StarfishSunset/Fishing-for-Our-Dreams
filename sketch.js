@@ -2,6 +2,7 @@
 let z = 1;
 let x = 100;
 let v = 100;
+let c = 30;
 let easing = .015;
 let yoff = 0.0;
 let others;
@@ -85,12 +86,16 @@ pop()
 //Cloud end
 
 //text
-push()
+
 fill(199,67,117)
 textSize(17)
 textFont('Papyrus')
-text(t, 30, 355);
-pop()
+text(t, c, 355);
+
+if (keyIsDown(RIGHT_ARROW)) {
+  c += 100000
+}
+
 //END text
  
 fishing();
