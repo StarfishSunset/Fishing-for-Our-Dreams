@@ -84,9 +84,9 @@ pop()
 //Cloud end
 
 //text
-fill(239,187,204)
+fill(199,67,117)
 textSize(15)
-textFont('MS Gothic')
+textFont('Papyrus')
 text('Move the boats left and right with the arrow keys', 340, 310);
 //END text
  
