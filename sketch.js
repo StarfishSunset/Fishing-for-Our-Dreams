@@ -93,10 +93,10 @@ textFont('Papyrus')
 text(t, c, 355);
 
 if (keyIsDown(RIGHT_ARROW)) {
-  c += 100000
+  c += 800
 }
 if (keyIsDown(LEFT_ARROW)) {
-  c += 100000
+  c += 800
 }
 
 //END text
