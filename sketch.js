@@ -87,7 +87,7 @@ pop()
 fill(199,67,117)
 textSize(17)
 textFont('Papyrus')
-text('Move the boats left and right with the arrow keys', 30, 310);
+text('Move the boats left and right with the arrow keys', 30, 500);
 //END text
  
 fishing();
